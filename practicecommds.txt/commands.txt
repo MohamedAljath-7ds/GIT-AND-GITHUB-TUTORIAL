@@ -1,0 +1,11 @@
+git init
+
+git add filename
+
+git commit -m "message"
+
+git push -u origin master
+
+git checkout -b "branch"
+
+git checkout master
