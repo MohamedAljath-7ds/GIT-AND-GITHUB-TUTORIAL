@@ -8,3 +8,7 @@ git push -u origin master
 
 git checkout -b "branch"
 
+<<<<<<< HEAD
+=======
+git checkout master
+>>>>>>> 8d28a8831b5e756f3aa2124f1744c770e7b5d02b

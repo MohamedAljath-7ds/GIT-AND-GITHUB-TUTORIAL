@@ -1,0 +1,20 @@
+git      github
+
+1.all the version control software        it is a website nice ui remote repository
+
+
+
+team of four dev
+
+own machines 
+ sync up - = - = - =
+
+make a new branch
+
+
+git checkout -b "nwe" // switched to new branch
+
+git checkout master // switched to master branch
+
+git merge master // new branch merged with master branch
+

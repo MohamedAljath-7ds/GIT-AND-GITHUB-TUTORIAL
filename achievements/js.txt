@@ -1,0 +1,49 @@
+How do you create a clock in JavaScript?
+JavaScript Code: For JavaScript, follow the below given steps.
+Step 1: Create a function “showTime”.
+Step 2: Create an instance of the Date object.
+Step 3: Using the methods of Date object get “hours”, “minute” and “seconds”.
+Step 4: Set AM/PM depending on the hour value.
+
+
+What is function () () in JavaScript?
+A function in JavaScript is similar to a procedure—a set of statements that performs a task or calculates a value, but for a procedure to qualify as a function, it should take some input and return an output where there is some obvious relationship between the input and the output.13
+
+
+
+// Function to compute the product of p1 and p2
+function myFunction(p1, p2) {
+  return p1 * p2;
+}
+this returns the answer of multiplications
+
+(condition ? if true : if false);
+
+setTimeout(function, milliseconds, param1, param2, ...)
+
+
+
+function currentTime() {
+    let date = new Date(); 
+    let hh = date.getHours();
+    let mm = date.getMinutes();
+    let ss = date.getSeconds();
+    let session = "AM";
+  
+      
+    if(hh > 12){
+        session = "PM";
+     }
+  
+     hh = (hh < 10) ? "0" + hh : hh;
+     mm = (mm < 10) ? "0" + mm : mm;
+     ss = (ss < 10) ? "0" + ss : ss;
+      
+     let time = hh + ":" + mm + ":" + ss + " " + session;
+  
+    document.getElementById("clock").innerText = time; 
+    let t = setTimeout(function(){ currentTime() }, 1000); 
+  
+  }
+  
+  currentTime();
